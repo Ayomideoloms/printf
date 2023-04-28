@@ -1,12 +1,21 @@
 #include "main.h"
-#include <stdarg.h>
+
+
+
 /**
- * _printf - a function that produces output according to a format.
- * 
- *
- *@format:  a character string parameter
- *
- * Return: Always 0
+
+ * _printf - produces output according to a format
+
+ * @format: format string containing the characters and the specifiers
+
+ * Description: this function will call the get_print() function that will
+
+ * determine which printing function to call depending on the conversion
+
+ * specifiers contained into fmt
+
+ * Return: length of the formatted output string
+
  */
 
 int _printf(const char *format, ...)
